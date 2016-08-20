@@ -20,7 +20,7 @@ defmodule NervesBlinky do
 
   # given an led key, turn it on for 100ms then back off
   defp blink(led_key) do
-    Logger.debug "blinking led #{inspect led_key}"
+    # Logger.debug "blinking led #{inspect led_key}"
     Leds.set [{led_key, true}]
     :timer.sleep @on_duration
     Leds.set [{led_key, false}]
